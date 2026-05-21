@@ -168,7 +168,7 @@ if __name__ == "__main__":
             print(
                 f"Top {item['rank']}: "
                 f"class={item['class_name']} | "
-                f"score={item['score']:.4f} | "
+                f"score={item['score']:.4f} | " 
                 f"path={item['image_path']}"
             )
     else:

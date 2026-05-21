@@ -78,7 +78,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+ 
 # Mount thư mục chứa ảnh tĩnh
 static_dir = os.path.join(os.path.dirname(__file__), "data", "photo")
 if os.path.exists(static_dir):
@@ -214,7 +214,7 @@ async def search(request: SearchRequest):
     filename = f"{uuid.uuid4()}.png"
     filepath = os.path.join(temp_dir, filename)
     
-    try:
+    try: 
         sketch_data = request.sketch_data
         if "," in sketch_data:
             sketch_data = sketch_data.split(",")[1]
